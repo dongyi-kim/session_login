@@ -669,7 +669,7 @@ jQuery.extend( jQuery.easing,
           left: 0
         })
 
-        // Set css on origin
+        // Set js on origin
         origin.css({position: 'absolute', 'z-index': 1000})
         .data('width', originalWidth)
         .data('height', originalHeight);
@@ -812,7 +812,7 @@ jQuery.extend( jQuery.easing,
             }
           );
 
-          // Remove Caption + reset css settings on image
+          // Remove Caption + reset js settings on image
           $('.materialbox-caption').velocity({opacity: 0}, {
             duration: outDuration + 200, // Delay prevents animation overlapping
             queue: false, easing: 'easeOutQuad',
@@ -1670,7 +1670,7 @@ $(document).ready(function(){
     //   }
     //   window.onmousewheel = document.onmousewheel = wheel;
     //   document.onkeydown = keydown;
-    //   $('body').css({'overflow-y' : 'hidden'});
+    //   $('body').js({'overflow-y' : 'hidden'});
     // }
 
     // function enable_scroll() {
@@ -1678,7 +1678,7 @@ $(document).ready(function(){
     //     window.removeEventListener('DOMMouseScroll', wheel, false);
     //   }
     //   window.onmousewheel = document.onmousewheel = document.onkeydown = null;
-    //   $('body').css({'overflow-y' : ''});
+    //   $('body').js({'overflow-y' : ''});
 
     // }
 
@@ -2655,11 +2655,11 @@ $(document).ready(function(){
         captionTransition($(this), 0);
       });
 
-      // Set initial dimensions of images
+      // Set initial dimensions of img
       // $slides.find('img').each(function () {
       //   $(this).load(function () {
       //     if ($(this).width() < $(this).parent().width()) {
-      //       $(this).css({width: '100%', height: 'auto'});
+      //       $(this).js({width: '100%', height: 'auto'});
       //     }
       //   });
       // });
