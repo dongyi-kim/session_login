@@ -2,18 +2,51 @@
 <% include ./partial/header.ejs %>
 <div class="container">
     <div class="row">
-        <div class="col s1">1</div>
-        <div class="col s1">2</div>
-        <div class="col s1">3</div>
-        <div class="col s1">4</div>
-        <div class="col s1">5</div>
-        <div class="col s1">6</div>
-        <div class="col s1">7</div>
-        <div class="col s1">8</div>
-        <div class="col s1">9</div>
-        <div class="col s1">10</div>
-        <div class="col s1">11</div>
-        <div class="col s1">12</div>
+        <h2 class="header"> Come on! </h2>
+        <p class="caption">
+            you can always sign up to this service!
+
+        </p>
+    </div>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <ul class="right">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="mdi-content-send right"></i>
+            </button>
+        </ul>
+
     </div>
 </div>
 <% include ./partial/footer.ejs%>
